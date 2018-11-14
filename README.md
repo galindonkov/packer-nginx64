@@ -1,6 +1,6 @@
 ### Description
 
-A project that create a```vagrant box``` with ```nginx``` installed on
+A project that creates a```vagrant box``` with ```nginx``` installed on
 
 ### Installed softwares needed prior to using the project
 
