@@ -11,7 +11,6 @@ A project that creates a```vagrant box``` with ```nginx``` installed on
 ### The repo is having following files
 
 - File ```http/preseed.cfg``` - a file for Ubuntu to self-install
-- File ```DETAILED.md``` : Detailed instructions how each step is accomplished with all related commands and needed information
 - File ```script/provision.sh``` :  a script that installs ```nginx```
 - File ```template.json``` : a JSON file that configure the various components of Packer in order to create required machine images.
 
