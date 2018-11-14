@@ -30,7 +30,7 @@ A packer project that creates a ```vagrant box``` with ```nginx``` installed
 
 - The build process is successful once you get a ```nginx64-vbox.box``` placed into your currect directory
 
-- Once you have that vbox image the Vagrant program is stepping in to create Vagrant environment by creating an initial Vagrantfile by : ```vagrant initnginx64-vbox.box```
+- Once you have that vbox image the Vagrant program is stepping in to create Vagrant environment by creating an initial Vagrantfile by : ```vagrant init nginx64-vbox.box```
 
 - Created Vagrantfile will be placed into your current directory and right after you can create and configure guest machines according to the Vagrantfile by : ```vagrant up```
 
