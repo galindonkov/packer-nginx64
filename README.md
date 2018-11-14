@@ -12,7 +12,10 @@ A packer project that creates a ```vagrant box``` with ```nginx``` installed
 
 - File ```http/preseed.cfg``` - a file for Ubuntu to self-install
 - File ```script/provision.sh``` :  a script that installs ```nginx```
-- File ```template.json``` : a JSON file that configure the various components of Packer in order to create required machine images.
+- File ```template.json``` : a JSON file that configure the various components of Packer in order to create required machine images
+- File ```Gemfile``` : It contains the ruby version and all required by the kitchen bundlers
+- File ```.kitchen.yml``` : The kitchen testing configuration file
+- File ```test/integration/default/check_pkg.rb``` : a ruby program used by the kitchen to test whether the ```nginx``` is installed
 
 
 ### How to use the repo
@@ -28,7 +31,7 @@ A packer project that creates a ```vagrant box``` with ```nginx``` installed
 
 - You are ready to build the virtual machine image by : ```packer build template.json```
 
-- The build process is successful once you get a ```nginx64-vbox.box``` placed into your currect directory
+- The build process is successful once you get a ```nginx64-vbox.box``` placed into your current directory
 
 - Once you have that vbox image the Vagrant program is stepping in to create Vagrant environment by creating an initial Vagrantfile by : ```vagrant init nginx64-vbox.box```
 
