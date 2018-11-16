@@ -22,9 +22,9 @@ A packer project that creates a ```vagrant box``` with ```nginx``` installed
 
 #### Note : Below steps have been applied on UbuntuOS, so in order to test it, please follow :
 
-- Clone this repo to your local machines : `git clone git@github.com:galindonkov/vagrant_nginx64.git`
+- Clone this repo to your local machines : `git clone git@github.com:galindonkov/packer-nginx64.git`
 
-- Change to the currently added directory : `cd vagrant_nginx64/`
+- Change to the currently added directory : `cd packer-nginx64/`
 
 - Validate the configuration json file by ```packer validate template.json```
   Config file is validated successfully after you get a message : ```Template validated successfully```
@@ -56,7 +56,7 @@ A packer project that creates a ```vagrant box``` with ```nginx``` installed
 
 #### After above requirements are met, you can proceed with kitchen tests
 
-- Change to the directory of the cloned repo : ```cd vagrant_nginx64/```
+- Change to the directory of the cloned repo : ```cd packer-nginx64/```
 - List kitchen environments if any : ```bundle exec kitchen list```
 - Build new kitchen environment : ```bundle exec kitchen converge```
 - Run the kitchen test by : ```bundle exec kitchen verify```
